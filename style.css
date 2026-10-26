@@ -1,0 +1,469 @@
+.menu-container {
+    position: fixed;
+    top: 20px;
+    right:20px;
+}
+
+/* Botão hambúrguer */
+.menu-button {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: mediumspringgreen;
+
+    font-size: 28px;
+    color: black;
+
+    cursor: pointer;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+    z-index: 1000;
+    
+    transition: transform( 0.3s ease);
+}
+
+/* Efeito quando passa o mouse */
+.menu-button:hover {
+    transform: scale(1.06);
+}
+
+/* Menu */
+.menu-opcoes {
+    position: absolute;
+
+    top: 0;
+
+    /* Faz o menu ficar à esquerda do botão */
+    right: 55px;
+
+    width: 220px;
+
+    background-color: white;
+
+    border-radius: 8px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+    padding: 10px 0;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateX(10px);
+
+    transition: all 0.25s ease;
+}
+
+/* Menu aberto */
+.menu-opcoes.aberto {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+/* Links */
+.menu-opcoes a {
+    display: block;
+
+    padding: 14px 18px;
+
+    color: black;
+
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+}
+
+/* Quando passar o mouse */
+.menu-opcoes a:hover {
+    background-color: wi;
+}
+
+/*css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* faz a pagina pular para a seção*/
+html {
+    scroll-behavior: smooth;
+}
+/*define a letra da pagina*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
+    color: white;
+    line-height: 1.6;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* mover*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
+    color: white;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+
+header {
+    width: %;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.navbar {
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: mediumspringgreen;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    color:white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color:mediumspringgreen;
+}
+
+.btn {
+    display: inline-block;
+    padding: 11px 22px;
+    background:mediumspringgreen;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: mediumspringgreen;
+    transform: translateY(-2px);
+}
+
+/* HERO */
+
+.hero {
+    max-width: 1200px;
+    min-height: 650px;
+    margin: auto;
+    padding: 80px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.tag {
+    color: mediumspringgreen;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: mediumspringgreen;
+}
+
+.hero-text > p:not(.tag) {
+    color: black;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.btn-large {
+    padding: 15px 25px;
+}
+
+/* CARD DO PATRIMÔNIO muda a cor da bor */
+
+.hero-card {
+    width: 350px;
+    padding: 30px;
+    background: linear-gradient(145deg, black, black);
+    border: 1px solid mediumspringgreen;
+    border-radius: 20px;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.3);
+}
+
+.hero-card p {
+    color: #666e79;
+}
+
+.hero-card h2 {
+    font-size: 32px;
+    margin: 8px 0;
+}
+
+.positive {
+    color: mediumspringgreen;
+}
+
+/* Seu patriminio barras de porcentagem bordas etc T1*/
+
+.chart {
+    height: 160px;
+    margin-top: 30px;
+    display: flex;
+    align-items: end;
+    gap: 12px;
+    border-bottom: 1px solid black;
+}
+
+.bar {
+    flex: 1;
+    background: mediumspringgreen;
+    border-radius: 5px 5px 0 0;
+}
+
+.bar1 { height: 35%; }
+.bar2 { height: 45%; }
+.bar3 { height: 40%; }
+.bar4 { height: 60%; }
+.bar5 { height: 55%; }
+.bar6 { height: 75%; }
+.bar7 { height: 95%; }
+
+
+/* INVESTIMENTOS T2 */
+
+.investments {
+    background:black;
+    padding: 90px 20px;
+}
+
+.section-title {
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+}
+
+.section-title h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.section-title > p:last-child {
+    color:black;
+}
+
+.cards {
+    max-width: 1100px;
+    margin: 50px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    padding: 30px;
+    background: #101f31;
+    border: 1px solid #203246;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: mediumspringgreen;
+}
+
+.card.featured {
+    border-color: mediumspringgreen;
+}
+
+.icon {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #8998a9;
+    margin-bottom: 25px;
+}
+
+.card a {
+    color: mediumspringgreen;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* SOBRE */
+
+.about {
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
+
+.about h2 {
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+.about-text > p {
+    color: #aab6c4;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.numbers {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.numbers div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #203246;
+}
+
+.numbers strong {
+    color: mediumspringgreen;
+    font-size: 20px;
+}
+
+.numbers span {
+    color: white;
+}
+
+/* CTA */
+
+.cta {
+    margin: 0;
+    padding: 90px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #0d2b24, #07111f);
+}
+
+.cta h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.cta p {
+    color: #9ba8b6;
+    margin-bottom: 30px;
+}
+
+/* FOOTER */
+
+footer {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #6f7e8d;
+}
+
+footer .logo {
+    color: white;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 800px) {
+
+    .menu {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 60px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about h2 {
+        font-size: 35px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+/*imagem*/
+.img{
+    width:400px ;
+   height:400 ;
+}
